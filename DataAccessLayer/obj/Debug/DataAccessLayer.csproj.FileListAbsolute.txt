@@ -1,0 +1,9 @@
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\fergu\source\repos\Consolatio\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

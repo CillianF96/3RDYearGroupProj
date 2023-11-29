@@ -1,0 +1,6 @@
+C:\Users\fergu\source\repos\Consolatio\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\fergu\source\repos\Consolatio\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\fergu\source\repos\Consolatio\BusinessEntities\obj\Debug\BusinessEntities.csproj.AssemblyReference.cache
+C:\Users\fergu\source\repos\Consolatio\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\fergu\source\repos\Consolatio\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\fergu\source\repos\Consolatio\BusinessEntities\obj\Debug\BusinessEntities.pdb

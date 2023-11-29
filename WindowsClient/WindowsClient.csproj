@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D95B520D-5FF9-452A-B4BB-09419DC196BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductTracking</RootNamespace>
+    <AssemblyName>ProductTracking</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName />
+    <SccLocalPath />
+    <SccAuxPath />
+    <SccProvider />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=4.3.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>packages\MailKit.4.3.0\lib\net48\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=4.3.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>packages\MimeKit.4.3.0\lib\net48\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=9.10.2.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\Spire.PDFViewer.7.12.1\lib\net48\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Asp, Version=7.12.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\Spire.PDFViewer.7.12.1\lib\net48\Spire.PdfViewer.Asp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=7.12.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\Spire.PDFViewer.7.12.1\lib\net48\Spire.PdfViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Formats.Asn1, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Formats.Asn1.7.0.0\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMain.designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="busiestDayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busiestDayForm.Designer.cs">
+      <DependentUpon>busiestDayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check-in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check-in.designer.cs">
+      <DependentUpon>Check-in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check-out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check-out.designer.cs">
+      <DependentUpon>Check-out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiningReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiningReservationForm.Designer.cs">
+      <DependentUpon>DiningReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodMenuForm.Designer.cs">
+      <DependentUpon>FoodMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddGuest.Designer.cs">
+      <DependentUpon>formAddGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddPerson.Designer.cs">
+      <DependentUpon>formAddPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAllocatePreparedProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAllocatePreparedProduct.Designer.cs" />
+    <Compile Include="formAllocatePreparedProduct1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>formAllocatePreparedProduct.resx</DependentUpon>
+    </Compile>
+    <Compile Include="formContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formContainer.Designer.cs">
+      <DependentUpon>formContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddUser.Designer.cs">
+      <DependentUpon>formAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formData.Designer.cs">
+      <DependentUpon>formData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataSelector.Designer.cs">
+      <DependentUpon>FormDataSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDeleteUser.Designer.cs">
+      <DependentUpon>formDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDiningMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDiningMain.Designer.cs">
+      <DependentUpon>formDiningMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditUser.Designer.cs">
+      <DependentUpon>formEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKey.Designer.cs">
+      <DependentUpon>formKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMakePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMakePayment.Designer.cs">
+      <DependentUpon>formMakePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManager.Designer.cs">
+      <DependentUpon>formManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formOperator.Designer.cs">
+      <DependentUpon>formOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSales.Designer.cs">
+      <DependentUpon>formSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewOrderDetails.Designer.cs">
+      <DependentUpon>formViewOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintVoucher.Designer.cs">
+      <DependentUpon>PrintVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMain.designer.cs">
+      <DependentUpon>StaffMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stay.Designer.cs">
+      <DependentUpon>Stay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoucherForm.Designer.cs">
+      <DependentUpon>VoucherForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busiestDayForm.resx">
+      <DependentUpon>busiestDayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check-in.resx">
+      <DependentUpon>Check-in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check-out.resx">
+      <DependentUpon>Check-out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiningReservationForm.resx">
+      <DependentUpon>DiningReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodMenuForm.resx">
+      <DependentUpon>FoodMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddGuest.resx">
+      <DependentUpon>formAddGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddPerson.resx">
+      <DependentUpon>formAddPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formData.resx">
+      <DependentUpon>formData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataSelector.resx">
+      <DependentUpon>FormDataSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDiningMain.resx">
+      <DependentUpon>formDiningMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKey.resx">
+      <DependentUpon>formKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMakePayment.resx">
+      <DependentUpon>formMakePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewOrderDetails.resx">
+      <DependentUpon>formViewOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintVoucher.resx">
+      <DependentUpon>PrintVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAllocatePreparedProduct_buttonAddProduct_Click.sequencediagram.layout">
+      <DependentUpon>formAllocatePreparedProduct_buttonAddProduct_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAllocatePreparedProduct_buttonFind_Click.sequencediagram.layout">
+      <DependentUpon>formAllocatePreparedProduct_buttonFind_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAddUser_buttonCommit_Click.sequencediagram.layout">
+      <DependentUpon>formAddUser_buttonCommit_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAddUser_formAddUser.sequencediagram.layout">
+      <DependentUpon>formAddUser_formAddUser.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAllocatePreparedProduct.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>formAllocatePreparedProduct1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formContainer.resx">
+      <DependentUpon>formContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddUser.resx">
+      <DependentUpon>formAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formOperator_formOperator.sequencediagram.layout">
+      <DependentUpon>formOperator_formOperator.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\Program_Main.sequencediagram.layout">
+      <DependentUpon>Program_Main.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formContainer_formContainer_Shown.sequencediagram.layout">
+      <DependentUpon>formContainer_formContainer_Shown.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDeleteUser.resx">
+      <DependentUpon>formDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEditUser.resx">
+      <DependentUpon>formEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManager.resx">
+      <DependentUpon>formManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formOperator.resx">
+      <DependentUpon>formOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSales.resx">
+      <DependentUpon>formSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StaffMain.resx">
+      <DependentUpon>StaffMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stay.resx">
+      <DependentUpon>Stay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoucherForm.resx">
+      <DependentUpon>VoucherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\BusinessEntities.Voucher.datasource" />
+    <None Include="Resources\FoodMenu.pdf" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BusinessEntities.Person.datasource" />
+    <None Include="Properties\DataSources\BusinessEntities.RoomReservation.datasource" />
+    <None Include="Properties\DataSources\BusinessEntities.User.datasource" />
+    <None Include="Sequence Diagrams\formAllocatePreparedProduct_buttonAddProduct_Click.sequencediagram" />
+    <None Include="Sequence Diagrams\formAllocatePreparedProduct_buttonFind_Click.sequencediagram" />
+    <None Include="Sequence Diagrams\formAddUser_buttonCommit_Click.sequencediagram" />
+    <None Include="Sequence Diagrams\formAddUser_formAddUser.sequencediagram" />
+    <None Include="Sequence Diagrams\formOperator_formOperator.sequencediagram" />
+    <None Include="Sequence Diagrams\Program_Main.sequencediagram" />
+    <None Include="Sequence Diagrams\formContainer_formContainer_Shown.sequencediagram" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\Sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water lilies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{c6a73728-6bb9-4642-9d48-c325006c4b08}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{ca30cd78-9de2-4918-addf-61d9969b3950}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{e4fb805a-177f-49ca-9a6c-cad32a094856}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Blue hills2.jpg" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\Consolatio -Small .png" />
+    <None Include="Resources\Consolatio.png" />
+    <None Include="Resources\GIT-IT-Done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

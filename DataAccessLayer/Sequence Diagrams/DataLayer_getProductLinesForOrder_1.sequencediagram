@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="3673127d-c0d1-41f9-a6b3-b02ea1ccb141" name="DataLayer_getProductLinesForOrder" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="8eb7f18f-830b-42c6-b966-3108f2bd87a6" name="DataLayer_getProductLinesForOrder" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="7d962464-95d6-45a4-8766-f9b966841141" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="f82e7cfc-5016-4088-8ad6-7b1c91f7142b" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="9447e3b0-2738-41e6-b7a9-5635b3494469" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="888086f8-efc3-4586-b3ed-96fe84bd268d" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c35be876-0ef5-40d0-86ac-8e01e17d0866" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="78808311-b475-45a0-b29b-b64fa558f345" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="6a761626-3684-4c33-8e01-d8fc7d59945d" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="8843813f-5336-4e75-98fe-c30f9321efa1" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="d8826491-750c-471b-80e6-dbce928c3246" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="e6627486-befe-48b1-a861-3fc8d27f8ddb" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="90fc70f2-8936-4893-877a-48f7ee1b4de2" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="17a2971d-30db-4d78-b1c9-edd4ce83bbd1" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="9447e3b0-2738-41e6-b7a9-5635b3494469" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="841843cd-8acf-48d9-97a2-4eba40039a82" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="52105b30-241c-4fc6-b7fc-9ed26eb9575f" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="888086f8-efc3-4586-b3ed-96fe84bd268d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="b6daeb68-007e-4482-8bbc-eb2a0656e025" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="Try">
+            <coveredLifelines>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="38b6cf40-22c5-4fa1-990e-9a27ad433cc0" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+                  <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+                  <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="f2a6e0ce-9594-4dd5-b489-7ef253f6040f" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+                      <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+                      <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="8c9f85b2-a02f-4738-bbeb-c936eee69426" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+                          <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+                          <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+                        </coveredLifelines>
+                        <fragments>
+                          <combinedFragment Id="591a9783-4459-4683-b2a4-ae4df4085089" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="If">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+                              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="31624785-165e-46a1-93be-8cef0c651009" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+                                  <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="447d9b55-c56e-42f6-b274-7e176396dbc8" guardText="if (ProductLine != null)" />
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="73639391-ceb3-46d1-b89e-a0c3bf25bfc3" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="fd3fb856-4931-481a-b73f-d64adfffcc2e" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="7a9535de-1c91-4c70-8ead-e3cce48911c9" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="90aac078-2775-4b97-aff8-4ae9fab3df01" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                              <interactionOperand Id="71729a69-ca3a-4eea-a2b0-616eac0619ca" name="InteractionOperand2">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+                                  <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="006e1233-1371-4200-95ab-992e5a14db95" guardText="else" />
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="0b89a189-c7f7-4bf6-967e-e5c17daf47e8" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="35607fc9-416b-48bf-bb70-7b5f2944d3d2" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="58903353-57c4-4204-ac7e-22b5cc330e45" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="0592bbc0-15e0-4095-8ba3-1f6676bd8c6d" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                        </fragments>
+                        <guard>
+                          <interactionConstraint Id="7e71ea78-0ad2-4db2-882f-be52f5fd5b4c" guardText="for (int i = 0;i &lt; totNumLines; i++)">
+                            <maxInt>
+                              <literalString Id="a3bc5416-db69-4e10-9057-dae24160efae" name="LiteralString1" />
+                            </maxInt>
+                            <minInt>
+                              <literalString Id="9f0b4bda-3761-40fe-9f5e-c7f02728ac99" name="LiteralString2" />
+                            </minInt>
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="78808311-b475-45a0-b29b-b64fa558f345" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="d8826491-750c-471b-80e6-dbce928c3246" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="2491d9e3-f39f-4810-8c7b-cd193513c9d3" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="819506b7-db44-41e6-b27d-0254c46ff550" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="ba43eda7-bbcf-4b8b-8864-e885df3da7c7" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="2c397a17-4125-4605-a3c5-6fe05d956e01" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="97c1be8a-8c84-4d9c-ad6e-8ca784fefac3" guardText="try" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="c35be876-0ef5-40d0-86ac-8e01e17d0866" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="e6627486-befe-48b1-a861-3fc8d27f8ddb" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="beea1cd2-5324-4864-a38c-e6917b62b1e4" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="377f3c32-b31c-4a40-b8d2-c1ae3edcb7cd" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="21358263-dbf7-40db-9be8-c429f4db398a" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="3f5edf71-fabe-4a7f-a151-c22440d6d70c" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand Id="e25a3fa8-a00e-4c31-b949-9efaf58d2df1" name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+                  <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+                  <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="fa4bf252-7253-4042-9e5e-ad5c972113fc" guardText="catch (Exception)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="90fc70f2-8936-4893-877a-48f7ee1b4de2" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="17a2971d-30db-4d78-b1c9-edd4ce83bbd1" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="7a1d077c-b239-4cb0-bba3-cf87144c7190" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="e02e78bb-7d11-41a5-8939-9c2397871614" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="fa302416-efe8-4bb0-9aff-a5996b2735d2" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="74b25835-b1b5-4c7f-a320-f3184fb746b7" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="beea1cd2-5324-4864-a38c-e6917b62b1e4" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="21358263-dbf7-40db-9be8-c429f4db398a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c35be876-0ef5-40d0-86ac-8e01e17d0866" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ba43eda7-bbcf-4b8b-8864-e885df3da7c7" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="2491d9e3-f39f-4810-8c7b-cd193513c9d3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="78808311-b475-45a0-b29b-b64fa558f345" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="5a4cdd1e-ca87-4372-97dd-73baccc8958b" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="b6e58a1c-784c-4207-8ae5-261ca98ee406" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="b84093af-a766-41ca-bf2d-30458524f103" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="bc07ccc0-e6bd-4a23-b30b-9032112b9c4d" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="73639391-ceb3-46d1-b89e-a0c3bf25bfc3" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="e1b7ae1c-b8b5-4fca-b8bd-23878ebb9cc8" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="fd3fb856-4931-481a-b73f-d64adfffcc2e" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0b89a189-c7f7-4bf6-967e-e5c17daf47e8" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="f9e24829-273d-42de-95c3-1714133c2278" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="9c2c7cb7-ff1a-46f8-8f76-0a786605ab0e" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="78f8d21b-062b-46d0-8eb5-670642949d2e" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="35607fc9-416b-48bf-bb70-7b5f2944d3d2" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="de59fe4a-9781-49f8-890c-211306cca902" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="b84093af-a766-41ca-bf2d-30458524f103" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ecb02cce-55f9-4838-a61a-ab8c3c866845" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6a761626-3684-4c33-8e01-d8fc7d59945d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bc07ccc0-e6bd-4a23-b30b-9032112b9c4d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="73639391-ceb3-46d1-b89e-a0c3bf25bfc3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7a9535de-1c91-4c70-8ead-e3cce48911c9" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e1b7ae1c-b8b5-4fca-b8bd-23878ebb9cc8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="371663f0-cb49-4f7b-a9e7-68fca4ce9a14" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="fd3fb856-4931-481a-b73f-d64adfffcc2e" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="90aac078-2775-4b97-aff8-4ae9fab3df01" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="58903353-57c4-4204-ac7e-22b5cc330e45" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0b89a189-c7f7-4bf6-967e-e5c17daf47e8" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="3242c148-c3bb-4ba2-87eb-b4ee989783a1" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="59791812-eca1-476c-8ba8-776cf062635d" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="4fb6ed5f-5d47-4ddb-b0e6-154f6a6be126" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="bd39f28c-e47a-4adc-91ff-9886d8c57a1a" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="89f589b0-406c-4d77-af3c-0530935d04ba" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="4fb6ed5f-5d47-4ddb-b0e6-154f6a6be126" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d83681a2-b911-4a7b-af28-90c2afe489d5" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f9e24829-273d-42de-95c3-1714133c2278" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bd39f28c-e47a-4adc-91ff-9886d8c57a1a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9c2c7cb7-ff1a-46f8-8f76-0a786605ab0e" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="89f589b0-406c-4d77-af3c-0530935d04ba" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="59791812-eca1-476c-8ba8-776cf062635d" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1544ea9f-0eae-460b-8dd9-3983a744912c" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="9999990a-62d0-4ba4-a272-ac6d0761c2a4" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="78f8d21b-062b-46d0-8eb5-670642949d2e" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="35607fc9-416b-48bf-bb70-7b5f2944d3d2" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0592bbc0-15e0-4095-8ba3-1f6676bd8c6d" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="de59fe4a-9781-49f8-890c-211306cca902" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8843813f-5336-4e75-98fe-c30f9321efa1" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="b6e58a1c-784c-4207-8ae5-261ca98ee406" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="304047fb-59cb-4ded-a1b4-8d7d515e1f18" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d8826491-750c-471b-80e6-dbce928c3246" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="2c397a17-4125-4605-a3c5-6fe05d956e01" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="819506b7-db44-41e6-b27d-0254c46ff550" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e6627486-befe-48b1-a861-3fc8d27f8ddb" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="3f5edf71-fabe-4a7f-a151-c22440d6d70c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="377f3c32-b31c-4a40-b8d2-c1ae3edcb7cd" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="fa302416-efe8-4bb0-9aff-a5996b2735d2" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="90fc70f2-8936-4893-877a-48f7ee1b4de2" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7a1d077c-b239-4cb0-bba3-cf87144c7190" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="17a2971d-30db-4d78-b1c9-edd4ce83bbd1" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e02e78bb-7d11-41a5-8939-9c2397871614" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" LastKnownName="ProductLineFactory" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="74b25835-b1b5-4c7f-a320-f3184fb746b7" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" LastKnownName="productLine : ProductLine" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="f82e7cfc-5016-4088-8ad6-7b1c91f7142b" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="559ab6ad-50ab-48cc-b85d-195e9d007ec9" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" LastKnownName="this : DataLayer" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="e2ab5c6b-cac3-4e67-bea8-31c5f0dc5b75" name="this : DataLayer" isActor="false" lifelineDisplayName="this : DataLayer" referencedInstance="(Assembly=&quot;$(e4fb805a-177f-49ca-9a6c-cad32a094856.OutputPathUri)&quot; Namespace=DataAccessLayer Type=DataLayer ObjectInstance=&quot;Object instance 2&quot;)" referencedType="DataAccessLayer‎.DataLayer">
+            <referencesInternal>
+              <reference Id="3348169f-4ed6-44f9-b063-185311d6462c" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DataAccessLayer)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(e4fb805a-177f-49ca-9a6c-cad32a094856.OutputPathUri)&amp;quot; Namespace=DataAccessLayer Type=DataLayer)&quot;)" tag="DGQL" />
+              <reference Id="031b967c-4984-460a-837a-e17bb9811410" handle="(Assembly=&quot;$(e4fb805a-177f-49ca-9a6c-cad32a094856.OutputPathUri)&quot; Namespace=DataAccessLayer Type=DataLayer)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="9447e3b0-2738-41e6-b7a9-5635b3494469" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="f82e7cfc-5016-4088-8ad6-7b1c91f7142b" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="eca6f54c-00d9-47d2-b064-5f304d23bca5" name="ProductLineFactory" isActor="false" lifelineDisplayName="ProductLineFactory" referencedType="BusinessEntities‎.ProductLineFactory">
+            <referencesInternal>
+              <reference Id="6961276f-bd8f-495d-8fb5-ec55f39efe27" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=BusinessEntities)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&amp;quot; Namespace=BusinessEntities Type=ProductLineFactory)&quot;)" tag="DGQL" />
+              <reference Id="0e4e4c76-ea63-41c8-bf95-120e2c7ca3cd" handle="(Assembly=&quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&quot; Namespace=BusinessEntities Type=ProductLineFactory)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="beea1cd2-5324-4864-a38c-e6917b62b1e4" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="2491d9e3-f39f-4810-8c7b-cd193513c9d3" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="b84093af-a766-41ca-bf2d-30458524f103" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="b6e58a1c-784c-4207-8ae5-261ca98ee406" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="819506b7-db44-41e6-b27d-0254c46ff550" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="377f3c32-b31c-4a40-b8d2-c1ae3edcb7cd" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7a1d077c-b239-4cb0-bba3-cf87144c7190" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="e02e78bb-7d11-41a5-8939-9c2397871614" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="b530ab56-8ef4-4ea6-ac12-a9f051e52117" name="productLine : ProductLine" isActor="false" lifelineDisplayName="productLine : ProductLine" referencedInstance="(Assembly=&quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&quot; Namespace=BusinessEntities Type=ProductLine ObjectInstance=&quot;Object instance 51&quot;)" referencedType="BusinessEntities‎.ProductLine">
+            <referencesInternal>
+              <reference Id="bc11783a-b076-47a7-8c6a-f633d2db796f" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=BusinessEntities)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&amp;quot; Namespace=BusinessEntities Type=ProductLine)&quot;)" tag="DGQL" />
+              <reference Id="db5300af-bb6b-4a2e-b46b-8f26ea965966" handle="(Assembly=&quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&quot; Namespace=BusinessEntities Type=ProductLine)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="21358263-dbf7-40db-9be8-c429f4db398a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="ba43eda7-bbcf-4b8b-8864-e885df3da7c7" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7a9535de-1c91-4c70-8ead-e3cce48911c9" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="90aac078-2775-4b97-aff8-4ae9fab3df01" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="58903353-57c4-4204-ac7e-22b5cc330e45" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="4fb6ed5f-5d47-4ddb-b0e6-154f6a6be126" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="59791812-eca1-476c-8ba8-776cf062635d" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0592bbc0-15e0-4095-8ba3-1f6676bd8c6d" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="2c397a17-4125-4605-a3c5-6fe05d956e01" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="3f5edf71-fabe-4a7f-a151-c22440d6d70c" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="fa302416-efe8-4bb0-9aff-a5996b2735d2" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="74b25835-b1b5-4c7f-a320-f3184fb746b7" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="c83d4fb8-dabc-4c05-a558-0346e1a9df48" name="getProductLinesForOrder" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="0de6abc8-207d-4d64-9507-cfb62cccfee1" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DataAccessLayer)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(e4fb805a-177f-49ca-9a6c-cad32a094856.OutputPathUri)&amp;quot; Namespace=DataAccessLayer Type=DataLayer)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(e4fb805a-177f-49ca-9a6c-cad32a094856.OutputPathUri)&amp;quot; Namespace=DataAccessLayer Type=DataLayer Member=(Name=getProductLinesForOrder OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="391fa2ec-a562-44b5-9c66-9f6dd71aece5" handle="(Assembly=&quot;$(e4fb805a-177f-49ca-9a6c-cad32a094856.OutputPathUri)&quot; Namespace=DataAccessLayer Type=DataLayer Member=(Name=getProductLinesForOrder OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="52105b30-241c-4fc6-b7fc-9ed26eb9575f" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="888086f8-efc3-4586-b3ed-96fe84bd268d" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="7ea64f61-b1c8-476e-a9a8-0d759a630fc2" name="GetProductLine" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="ProductLineFactory.GetProductLine(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),...">
+            <referencesInternal>
+              <reference Id="2a85f68a-f2d9-4a4d-a84e-38f0e2c0b289" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=BusinessEntities)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&amp;quot; Namespace=BusinessEntities Type=ProductLineFactory)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&amp;quot; Namespace=BusinessEntities Type=ProductLineFactory Member=(Name=GetProductLine OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=String),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="6431757d-256c-42e7-80f9-fa8f6dcdc1ff" handle="(Assembly=&quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&quot; Namespace=BusinessEntities Type=ProductLineFactory Member=(Name=GetProductLine OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6a761626-3684-4c33-8e01-d8fc7d59945d" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="bc07ccc0-e6bd-4a23-b30b-9032112b9c4d" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="4800e22e-8035-4ecd-b0d5-8af500955cb3" name="Return" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false" signatureText="return ProductLine">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="e1b7ae1c-b8b5-4fca-b8bd-23878ebb9cc8" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="371663f0-cb49-4f7b-a9e7-68fca4ce9a14" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="409debc7-ccf8-4dae-8610-ebb5e8c53a42" name="Create ProductLine" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false" signatureText="new ProductLine(productLineCode, orderCode, productCode, qtyRequired, qtyPrepared)">
+            <referencesInternal>
+              <reference Id="92434d4d-777f-41ec-8d1e-bc13453f846b" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=BusinessEntities)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&amp;quot; Namespace=BusinessEntities Type=ProductLine)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&amp;quot; Namespace=BusinessEntities Type=ProductLine Member=(Name=.ctor OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=String),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="7ad0d138-8ab1-4730-bfc8-158e5cd58879" handle="(Assembly=&quot;$(c6a73728-6bb9-4642-9d48-c325006c4b08.OutputPathUri)&quot; Namespace=BusinessEntities Type=ProductLine Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="f9e24829-273d-42de-95c3-1714133c2278" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="bd39f28c-e47a-4adc-91ff-9886d8c57a1a" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="a5e64863-5839-45e1-b87a-f872da0ba023" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="89f589b0-406c-4d77-af3c-0530935d04ba" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="9c2c7cb7-ff1a-46f8-8f76-0a786605ab0e" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="fbddc5e1-6d47-4e14-b7ae-a65fc105053c" name="Return" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false" signatureText="return new ProductLine(productLineCode, orderCode, productCode, qtyRequired, qtyPrepared)">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="78f8d21b-062b-46d0-8eb5-670642949d2e" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="9999990a-62d0-4ba4-a272-ac6d0761c2a4" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="20d910f5-42cd-4367-88d6-f3cd1b9227fc" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="de59fe4a-9781-49f8-890c-211306cca902" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="8843813f-5336-4e75-98fe-c30f9321efa1" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="841843cd-8acf-48d9-97a2-4eba40039a82" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="559ab6ad-50ab-48cc-b85d-195e9d007ec9" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ecb02cce-55f9-4838-a61a-ab8c3c866845" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="304047fb-59cb-4ded-a1b4-8d7d515e1f18" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d83681a2-b911-4a7b-af28-90c2afe489d5" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1544ea9f-0eae-460b-8dd9-3983a744912c" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>

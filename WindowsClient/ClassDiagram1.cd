@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProductTracking.formContainer">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAgAAAAAEAA=</HashCode>
+      <FileName>formContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductTracking.formLogin" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAAAAEIACAAAQSAAAAAAAAAQgABAAAACA=</HashCode>
+      <FileName>formLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductTracking.formManager" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAAAACQAAAAAIBCAIAACAAAAQwAAAAgABAAAAAA=</HashCode>
+      <FileName>formManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductTracking.formAddUser" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAABAAAASADAACAAEAAAAAAQgBAAAAACA=</HashCode>
+      <FileName>formAddUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductTracking.formDeleteUser" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAACAAAEAAAACACAAiAACAAAAAAAgBAAAAAAA=</HashCode>
+      <FileName>formDeleteUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductTracking.formEditUser">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAAACADAAiAAEAAAABAQgBAAAAAiA=</HashCode>
+      <FileName>formEditUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLayer.Model">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BusinessEntities.User" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BusinessEntities.UserFactory">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="10" />
+</ClassDiagram>

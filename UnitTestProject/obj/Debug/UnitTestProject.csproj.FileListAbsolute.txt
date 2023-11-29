@@ -1,0 +1,9 @@
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\bin\Debug\nunit.framework.dll
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\bin\Debug\nunit.framework.xml
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\fergu\source\repos\Consolatio\UnitTestProject\obj\Debug\UnitTestProject.pdb
